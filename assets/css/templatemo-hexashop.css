@@ -239,7 +239,7 @@ header
   top: 0px;
   left: 0px;
   right: 0px;
-  z-index: 100;
+  z-index: 10000;
   height: 100px;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
@@ -765,7 +765,7 @@ test
 ---------------------------------------------
 */
 
-@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+/* @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700"); */
  /* body {
 	 display: flex;
 	 justify-content: flex-start;
@@ -778,18 +778,18 @@ test
 	 position: relative;
 	 display: flex;
    padding-top: 90px;
-   padding-bottom: 90px;
+   padding-bottom: 30px;
    
 }
  .carousel .slides {
 	 position: relative;
 	 top: -4em;
-	 left: 10em;
+	 left: 2em;
 }
  .carousel .slides img {
 	 position: absolute;
-	 width: 450px;
-	 height: 450px;
+	 width: 375px;
+	 height: 524px;
 	 opacity: 0;
    z-index: 9999;
 }
@@ -798,8 +798,8 @@ test
 }
  .carousel .overlays {
 	 position: relative;
-	 width: 36em;
-	 height: 18em;
+	 width: 20em;
+	 height: 30.7em;
 }
  .carousel .overlays .bar {
 	 position: absolute;
@@ -813,6 +813,8 @@ test
  .carousel .nav-links {
 	 display: flex;
 	 flex-direction: column;
+   position: relative;
+   left: 12em;
 	 justify-content: center;
 	 align-items: flex-start;
 	 margin: 0;
@@ -820,19 +822,18 @@ test
 	 list-style-type: none;
 }
  .carousel .nav-links .nav-link {
-	 font-size: 2rem;
-	 font-family: Lora, serif;
+	 font-size: 3rem;
 	 line-height: 2;
-	 text-decoration: none;
-	 color: #7f8c8d;
+	 color: #ffffff;
 	 transition: 0.3s;
 }
  .carousel .nav-links .nav-link:hover {
-	 color: #1c1e1f;
+	 color: #dde4e8;
 }
  .carousel .nav-links .nav-link.active {
-	 color: black;
+	 color: rgb(130, 130, 130);
 	 pointer-events: none;
+   text-decoration: underline;
 }
  
 
@@ -843,14 +844,18 @@ Men
 */
 
 #men {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   /* border-bottom: 3px dotted #eee; */
-  background-color: #1f1f1f;
+  background-color: #2a2a2a;
 }
 
 #men .section-heading {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+#men .section-heading h2{
+  color: #dde4e8;
 }
 
 #men .item .down-content {
@@ -1005,13 +1010,13 @@ Women
 */
 
 #women {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 60px;
   /* border-bottom: 3px dotted #eee; */
 }
 
 #women .section-heading {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 #women .item .down-content {
@@ -1165,25 +1170,25 @@ Kids
 */
 
 #kids {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   /* border-bottom: 3px dotted #eee; */
-  background-color: #1f1f1f;
-}
-
-#kids .section-heading .h2 {
-  color: #a1a1a1;
+  background-color: #2a2a2a;
 }
 
 #kids .section-heading {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+#kids .section-heading h2{
+  color: #dde4e8;
 }
 
 #kids .item .down-content {
   padding-top: 30px;
   position: relative;
   z-index: 3;
-  background-color: #1f1f1f;
+  background-color: #2a2a2a;
 }
 
 #kids .item .down-content h4 {
@@ -1331,8 +1336,8 @@ Explore
 */
 
 #explore {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   border-bottom: 3px dotted #eee;
 }
 
@@ -1581,7 +1586,7 @@ footer
 */
 
 footer {
-  margin-top: 60px;
+  margin-top: 0px;
   padding: 60px 0px 30px 0px;
   background-color: #2a2a2a;
   text-align: center;
@@ -1589,7 +1594,14 @@ footer {
 }
 
 footer .logo {
+  position: absolute;
+  left: 70%;
   margin-bottom: 20px;
+}
+
+footer .logo img {
+  height: 80%;
+  width: 80%;
 }
 
 footer ul li {
