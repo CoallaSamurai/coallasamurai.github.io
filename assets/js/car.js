@@ -18,7 +18,7 @@ navLinks.forEach(function (navLink, activeIndex) {
             { transform: "translateX(0)", opacity: 1 },
             { transform: "translateX(5%)", opacity: 0 }
         ], {
-            duration: 60,
+            duration: 120,
             easing: "ease-in",
             fill: "forwards"
         });
@@ -35,12 +35,12 @@ navLinks.forEach(function (navLink, activeIndex) {
                     transform: "translateX(0)",
                     opacity: 1
                 }
-            ], { duration: 60, easing: "ease-out", fill: "forwards" });
+            ], { duration: 120, easing: "ease-out", fill: "forwards" });
         };
         // overlay
         maxZIndex += 1;
         var activeOverlay = overlays[activeIndex];
         activeOverlay.style.zIndex = "".concat(maxZIndex);
-        activeOverlay.animate([{ transform: "scaleX(0)" }, { transform: "scaleX(1)" }], { duration: 120, fill: "forwards", easing: easeInOutQuart });
+        activeOverlay.animate([{ transform: "scaleX(0)" }, { transform: "scaleX(1)" }], { duration: 240, fill: "forwards", easing: easeInOutQuart });
     });
 });
